@@ -1,0 +1,18 @@
+#chatbot
+import datetime
+dis={"hi":"hello",
+     "whats your source":"OS",
+     "your roll.no":"2010",
+     "div":"B",
+     "stream":"Science",
+     "Subject":"IOT",
+     "Date":"&now"}
+now = datetime.datetime.now()
+print("Current date and time : ")
+print(now.strftime("%Y-%m-%d %H:%M:%S"))
+while True:
+    qs=input()
+    if(qs=="quit"):
+      break
+    else:
+      print(dis[qs])
